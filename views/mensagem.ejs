@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+</style>
+
+<body>
+    <a href="/">
+    <button class="btn waves-effect waves-light" type="" name="action">VOLTAR
+    </button></a>
+    <h2 style="text-align: center;">lista de contatos</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Mensagem</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <% for (var i=0;i<mensagens.length;i++){ %>
+                        <tr>
+                                <td>
+                                    <%= mensagens[i].nome %>
+                                </td>
+                                <td>
+                                    <%= mensagens[i].email %>
+                                </td>
+                                <td>
+                                    <%= mensagens[i].mensagem %>
+                                </td>
+                        </tr>
+                        <% } %>
+
+                    </tbody>
+                </table>
+                <!-- Compiled and minified CSS -->
+                <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+                <!-- Compiled and minified JavaScript -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+</body>
+
+</html>
